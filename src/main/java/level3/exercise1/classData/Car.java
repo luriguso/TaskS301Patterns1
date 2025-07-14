@@ -32,6 +32,6 @@ public class Car extends Vehicle {
 
     @Override
     public void releaseBrake() {
-        System.out.println("the break is braking");
+        System.out.println("the brake is braking");
     }
 }

@@ -33,6 +33,6 @@ public class Plane extends Vehicle{
 
     @Override
     public void releaseBrake() {
-        System.out.println("the break is stopped");
+        System.out.println("the brake is stopped");
     }
 }

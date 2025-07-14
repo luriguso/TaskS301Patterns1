@@ -30,7 +30,11 @@ public class UndoManagement {
         }
     }
 
-    public Stack<String> getHistory() {
-        return (Stack<String>) history.clone();
+    public void showHistory() {
+        if (history.isEmpty()) {
+            System.out.println("No actions performed yet.");
+        } else {
+            System.out.println("Current history: " + history);
+        }
     }
 }

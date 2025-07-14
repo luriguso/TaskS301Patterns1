@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         AgendaManagement agendaManagement = new AgendaManagement();
 
-        agendaManagement.addContactBolvia();
+        agendaManagement.addContactBolivia();
         agendaManagement.showAgenda();
         agendaManagement.addContactJapan();
         agendaManagement.showAgenda();

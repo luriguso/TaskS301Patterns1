@@ -33,6 +33,6 @@ public class Ship extends Vehicle{
 
     @Override
     public void releaseBrake() {
-        System.out.println("the break is releasing");
+        System.out.println("the brake is releasing");
     }
 }

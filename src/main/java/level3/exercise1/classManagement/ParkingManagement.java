@@ -3,22 +3,19 @@ package level3.exercise1.classManagement;
 import level3.exercise1.classData.*;
 import level3.exercise1.interfaces.Command;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
-public class ParkingManagment {
+public class ParkingManagement {
     private Parking parking = new Parking();
-    private static ParkingManagment instance;
+    private static ParkingManagement instance;
     CommandAction commandAction = new CommandAction();
 
-    public static ParkingManagment getInstance() {
+    public static ParkingManagement getInstance() {
         if (instance == null) {
-            instance = new ParkingManagment();
+            instance = new ParkingManagement();
         }
         return instance;
     }
 
-    private ParkingManagment() {
+    private ParkingManagement() {
 
     }
 
@@ -34,7 +31,7 @@ public class ParkingManagment {
     }
 
     public void turnOnVehicle(){
-        System.out.println("Accelerate Vehicle");
+        System.out.println("Turn on Vehicle");
         System.out.println(parking.getVehicles().size());
         for (Vehicle vehicle : parking.getVehicles()) {
             Command turnOn = new StartVehicleCommand(vehicle);
@@ -61,7 +58,7 @@ public class ParkingManagment {
     }
 
     public void brakeVehicle(){
-        System.out.println("Accelerate Vehicle");
+        System.out.println("brake Vehicle");
         System.out.println(parking.getVehicles().size());
         for (Vehicle vehicle : parking.getVehicles()) {
             Command brake = new BrakeVehicleCommand(vehicle);

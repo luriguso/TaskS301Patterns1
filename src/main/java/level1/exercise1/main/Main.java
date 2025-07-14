@@ -20,17 +20,18 @@ public class Main {
             switch (choice) {
                 case 0: return;
                 case 1: {
-                    consoleUI.doAction();
+                    consoleUI.askForAction();
                     String action = sc.nextLine();
                     undoManagement.doAction(action);
                     break;
                 }
                 case 2: {
-                    consoleUI.undoLastAction();
                     undoManagement.undo();
+                    break;
                 }
                 case 3: {
-                    consoleUI.viewHistory(undoManagement2.getHistory());
+                    undoManagement2.showHistory();
+                    break;
                 }
             }
         }

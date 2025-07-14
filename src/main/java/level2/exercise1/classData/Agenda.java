@@ -17,4 +17,8 @@ public class Agenda {
         System.out.println("Telephone: " + telephone.getNumberPhone());
     }
 
+    @Override
+    public String toString() {
+        return "Address: " + address.getFullAddress() + "\nTelephone: " + telephone.getNumberPhone();
+    }
 }

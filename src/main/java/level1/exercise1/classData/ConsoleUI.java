@@ -22,19 +22,7 @@ public class ConsoleUI {
         System.out.println("0) Exit");
     }
 
-    public void doAction(){
-        System.out.println("Write the action.");
-    }
-
-    public void undoLastAction(){
-        System.out.println("Undoing last action.");
-    }
-
-    public void viewHistory(Stack<String> history){
-        if (history.isEmpty()) {
-            System.out.println("No actions performed yet.");
-        } else {
-            System.out.println("Current history: " + history);
-        }
+    public void askForAction(){
+        System.out.println("Write the action:");
     }
 }

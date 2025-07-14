@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AgendaManagement {
-    List<Agenda> agenda;
+    private final List<Agenda> agenda;
 
     public AgendaManagement() {
         agenda = new ArrayList<>();
     }
 
-    public void addContactBolvia(){
+    public void addContactBolivia(){
         AgendaFactory agendaBolivia = new AgendaBoliviaFactory();
         Agenda boliviaContact = new Agenda(
                 agendaBolivia.createAddress("Esteban Arce", "5", "Cochabamba"),
@@ -49,9 +49,7 @@ public class AgendaManagement {
 
     public void showAgenda(){
         System.out.println("-----------Contacts---------");
-        for (Agenda a : agenda){
-            a.showContact();
-        }
+        agenda.forEach(System.out::println);
         System.out.println("----------------------------");
     }
 }
