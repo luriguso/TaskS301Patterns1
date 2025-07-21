@@ -7,8 +7,8 @@ public class Main {
         AgendaManagement agendaManagement = new AgendaManagement();
 
         agendaManagement.addContactBolivia();
-        agendaManagement.showAgenda();
         agendaManagement.addContactJapan();
+        agendaManagement.addContactSpain();
         agendaManagement.showAgenda();
     }
 }
